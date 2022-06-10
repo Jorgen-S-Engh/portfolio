@@ -479,7 +479,6 @@ td{
     .links-container{
         grid-area:links-container;
         
-
     }
     .bio-info{
         grid-area:bio-info;
@@ -492,6 +491,12 @@ td{
     }
     .lets-connect{
         grid-area:lets-connect;
+    }
+
+    .contact-button:hover{
+        background-color: #0a192f;
+        border:solid 2px var(--red);
+
     }
 
 

@@ -2,9 +2,6 @@ const contact = document.querySelector(".contact-info");
 const button = document.querySelector(".contact-button");
 const downloadIcon = document.querySelector(".fa-circle-arrow-down");
 const downloadButton = document.querySelector(".cv-button");
-const 
-
-
 
 button.addEventListener("click", () => {
   contact.style.display = "flex";
@@ -20,4 +17,3 @@ downloadButton.addEventListener("mouseout", () => {
   downloadIcon.style.color = "#f5f5f5";
   downloadButton.style.color = "#f5f5f5";
 });
-
