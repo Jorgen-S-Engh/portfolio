@@ -12,13 +12,17 @@
     <title>Jørgen Engh Portefolio</title>
   </head>
   <body>
-    <nav>
-      <!-- <h2>testing</h2> -->
-    </nav>
+    <nav></nav>
     <div class="cover-container">
       <div class="image-container">
         <img
+          class="mobile-img"
           src="img\profileundonesmall-small.jpg"
+          alt="Profile picture of Jørgen S. Engh"
+        />
+        <img
+          class="desktop-img"
+          src="img/profileundonesmall.png"
           alt="Profile picture of Jørgen S. Engh"
         />
       </div>
@@ -27,99 +31,109 @@
         <h2>Frontend-developer</h2>
         <div class="button-container">
           <!-- <a href="" class="cv-button">CV</a> -->
-          <a href="CV\CV Jørgen Engh 2022.pdf" class="cv-button" download>CV<i class="fa-solid fa-circle-arrow-down"></i></a>
-        </div>
-      </div>
-
-    </div>
-    <div class="bio-headline">
-      <h1>About me</h1>
-      <i class="fa-solid fa-code"></i>
-    </div>
-    <div class="bio-text">
-      <p>
-        I am finishing a two year higher professional degree in
-        frontend-development at Noroff in the spring of 2023. My goal is to work
-        as a developer, preferably in a consultant firm. I have a masterdegree
-        in political science, and I have been woring on various projects prior
-        to my development studies.
-      </p>
-    </div>
-    <div class="skill-icons">
-      <h2>Skills</h2>
-      <div class="first-row">
-        <div>
-          <i class="fa-brands fa-html5"></i>
-          <p>HTML5</p>
-        </div>
-        <div>
-          <i class="fa-brands fa-css3-alt"></i>
-          <p>CSS 3</p>
-        </div>
-        <div>
-          <i class="fa-brands fa-js-square"></i>
-          <p>Js</p>
-        </div>
-      </div>
-      <div class="sec-row">
-        <div>
-          <i class="fa-brands fa-react"></i>
-          <p>React</p>
-        </div>
-        <div>
-          <i class="fa-brands fa-python"></i>
-          <p>Python</p>
-        </div>
-        <div>
-          <i class="fa-brands fa-wordpress"></i>
-          <p>Wordpress</p>
+          <a href="cv\CV Jørgen Engh 2022.pdf" class="cv-button" download
+            >CV<i class="fa-solid fa-circle-arrow-down"></i
+          ></a>
         </div>
       </div>
     </div>
-
-    <div class="portefolio">
-      <h2 class="portfolio-headline">Portfolio</h2>
-      <p class="portefolio-number">01</p>
-      <h3>The Science Museum</h3>
-      <hr />
-      <a href="https://ecstatic-gates-dc087a.netlify.app/" target="_blank">
-        <div class="portefolio-item">
+    <section class="mid-section">
+      <div class="bio-container">
+        <div class="bio-headline">
+          <h2>About me</h2>
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="bio-text">
+          <p>
+            I am finishing a two year higher professional degree in
+            frontend-development at Noroff in the spring of 2023. My goal is to
+            work as a developer, preferably in a consultant firm. I have a
+            masterdegree in political science, and I have been working on
+            various projects prior to my development studies.
+          </p>
+        </div>
+      </div>
+      <div class="skills-container">
+        <div class="skill-icons">
+          <h2>Skills</h2>
+          <div class="first-row">
+            <div>
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML5</p>
+            </div>
+            <div>
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS 3</p>
+            </div>
+            <div>
+              <i class="fa-brands fa-js-square"></i>
+              <p>Js</p>
+            </div>
+          </div>
+          <div class="sec-row">
+            <div>
+              <i class="fa-brands fa-react"></i>
+              <p>React</p>
+            </div>
+            <div>
+              <i class="fa-brands fa-python"></i>
+              <p>Python</p>
+            </div>
+            <div>
+              <i class="fa-brands fa-wordpress"></i>
+              <p>Wordpress</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h2 class="portfolio-headline">Portfolio</h2>
+    <section class="portfolio">
+      <div class="portfolio-item">
+        <div class="portfolio-headings">
+          <p class="portfolio-number">01</p>
+          <h3>The Science Museum</h3>
+          <hr />
+        </div>
+        <a class="portfolio-img-container" href="https://ecstatic-gates-dc087a.netlify.app/" target="_blank">
           <img
             src="img\museum img.jpg"
             alt="Picture of the webpage The Science Museum"
           />
-      </a>
-          <div class="portefolio-card">
-            <h3>Description:</h3>
-            <p>
-              Semester project for the first semester. The assignment was to
-              create an webpage for the fictitious The Science Museum
-            </p>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <h4>Built with:</h4>
-            <div class="built-with">
-              <div>
-                <i class="fa-brands fa-html5"></i>
-                <p>HTML5</p>
-              </div>
-              <div>
-                <i class="fa-brands fa-css3-alt"></i>
-                <p>CSS3</p>
-              </div>
+        </a>
+        <div class="portfolio-card">
+          <h3>Description:</h3>
+          <p>
+            Semester project for the first semester. The assignment was to
+            create an webpage for the fictitious The Science Museum
+          </p>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <h4>Built with:</h4>
+          <div class="built-with">
+            <div>
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML5</p>
+            </div>
+            <div>
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS3</p>
             </div>
           </div>
         </div>
-      <p class="portefolio-number">02</p>
-      <h3>Ameta</h3>
-      <hr />
-      <div class="portefolio-item">
-      <a href="https://jocular-lolly-de4bfa.netlify.app/index.html" target="_blank">
-        <img
-          src="img\ameta_img2.jpg"
-          alt="Picture of the webpage The Science Museum"
-        />
-      </a>
-        <div class="portefolio-card">
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-headings">
+          <p class="portfolio-number">02</p>
+          <h3>Ameta</h3>
+          <hr />
+        </div>
+        <a class="portfolio-img-container" href=https://jocular-lolly-de4bfa.netlify.app/index.html" target="_blank">
+          <img
+            src="img\ameta_img2.jpg"
+            alt="Picture of the webpage for Ameta"
+          />
+        </a>
+        <div class="portfolio-card">
           <h3>Description:</h3>
           <p>
             Project exam for the first semester. The assignment was to create a
@@ -143,21 +157,23 @@
           </div>
         </div>
       </div>
-      <p class="portefolio-number">03</p>
-      <h3>Rainydays</h3>
-      <hr />
-      <div class="portefolio-item">
-      <a href="https://priceless-northcutt-785aeb.netlify.app/" target="_blank">
-        <img
-          src="img/rainydays.jpg"
-          alt="Picture of the webpage The Science Museum"
-        />
-      </a>
-        <div class="portefolio-card">
+      <div class="portfolio-item">
+        <div class="portfolio-headings">
+          <p class="portfolio-number">03</p>
+          <h3>Rainydays</h3>
+          <hr />
+        </div>
+        <a class="portfolio-img-container" href="https://priceless-northcutt-785aeb.netlify.app/" target="_blank">
+          <img
+            src="img/rainydays.jpg"
+            alt="Picture of the webpage Rainydays"
+          />
+        </a>
+        <div class="portfolio-card">
           <h3>Description:</h3>
           <p>
-            This site was the course assignment for the HTML and CSS course at Noroff. It displays the online shop "Rainydays"
-
+            This site was the course assignment for the HTML and CSS course at
+            Noroff. It displays the online shop "Rainydays"
           </p>
           <a href=""><i class="fa-brands fa-github"></i></a>
           <h4>Built with:</h4>
@@ -171,6 +187,135 @@
               <p>CSS3</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="portefolio">
+     <div class="portfolio-item-container">
+      <div class="portfolio-headings">
+        <p class="portfolio-number">01</p>
+        <h3>The Science Museum</h3>
+        <hr />
+      </div>
+        <a href="https://ecstatic-gates-dc087a.netlify.app/" target="_blank">
+          <div class="portefolio-item">
+            <img
+              src="img\museum img.jpg"
+              alt="Picture of the webpage The Science Museum"
+            />
+          </div>
+        </a>
+          <div class="portfolio-card">
+            <h3>Description:</h3>
+            <p>
+              Semester project for the first semester. The assignment was to
+              create an webpage for the fictitious The Science Museum
+            </p>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <h4>Built with:</h4>
+            <div class="built-with">
+              <div>
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML5</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS3</p>
+              </div>
+            </div>
+          </div>
+      </div> 
+    <div class="portfolio-item-container">
+      <div class="portfolio-headings">
+        <p class="portfolio-number">02</p>
+        <h3>Ameta</h3>
+        <hr />
+      </div>
+      <div class="portefolio-item">
+        <a href="https://jocular-lolly-de4bfa.netlify.app/index.html" target="_blank">
+          <img
+            src="img\ameta_img2.jpg"
+            alt="Picture of the webpage The Science Museum"
+          />
+        </a>
+      </div>
+        <div class="portfolio-card">
+          <h3>Description:</h3>
+          <p>
+            Project exam for the first semester. The assignment was to create a
+            new webpage for the company Ameta.
+          </p>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <h4>Built with:</h4>
+          <div class="built-with">
+            <div>
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML5</p>
+            </div>
+            <div>
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS3</p>
+            </div>
+            <div>
+              <i class="fa-brands fa-js-square"></i>
+              <p>Js</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="portfolio-item-container">
+      <div class="portfolio-headings">
+        <p class="portfolio-number">03</p>
+        <h3>Rainydays</h3>
+        <hr />
+      </div>
+      <div class="portefolio-item">
+      <a href="https://priceless-northcutt-785aeb.netlify.app/" target="_blank">
+        <img
+          src="img/rainydays.jpg"
+          alt="Picture of the webpage The Science Museum"
+        />
+      </a>
+        <div class="portfolio-card">
+          <h3>Description:</h3>
+          <p>
+            This site was the course assignment for the HTML and CSS course at Noroff. It displays the online shop "Rainydays"
+          </p>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <h4>Built with:</h4>
+          <div class="built-with">
+            <div>
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML5</p>
+            </div>
+            <div>
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS3</p>
+            </div>
+          </div>
+        </div>
+    </div>
+   </section> -->
+  <section class="last-section">
+    <div class="links-container">
+      <h2 class="links-headline">Links</h2>
+      <div class="links">
+        <div>
+          <a
+            href="https://github.com/Jorgen-S-Engh/Jorgen-S-Engh"
+            target="_blank"
+            ><i class="fa-brands fa-github" id="main-git"></i
+          ></a>
+          <p>Github</p>
+        </div>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/j%C3%B8rgen-engh-902669100/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <p>Linkedin</p>
         </div>
       </div>
     </div>
@@ -211,20 +356,23 @@
       </ul>
     </div>
     <div class="lets-connect">
-      <h4>Let's have a coffee</h4><i class="fa-solid fa-mug-hot"></i>
+      <h4>Let's have a coffee</h4>
+      <i class="fa-solid fa-mug-hot"></i>
       <div class="contact-info">
         <p>Let's connect</p>
-        <a href="https://www.linkedin.com/in/j%C3%B8rgen-engh-902669100/"target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a
+          href="https://www.linkedin.com/in/j%C3%B8rgen-engh-902669100/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
         <p>Contact me by email:</p>
         <a href="mailto:jorgen.engh@hotmail.com">Email</a>
         <p>or phone:</p>
         <a href="tel:+47 47079986">+4747079986</a>
       </div>
       <button class="contact-button">Contact me</button>
-
     </div>
-    <script src="js\script.js"></script>
-
+  </section>
+  <script src="js\script.js"></script>
   </body>
-  
 </html>

@@ -64,12 +64,16 @@ h1{
     flex-direction: column;
     align-items: center;
     background-color: rgba(85, 139, 196, 0.1);
-    /* height:400px;  */
+    
+}
+
+.desktop-img{
+    display:none;
 }
 
 .image-container{
-    height:180px; /*med denne høyden så går bilde under teksten, dette er ønsket effekt */
-    width:100%;
+    /* height:180px; med denne høyden så går bilde under teksten, dette er ønsket effekt */
+    width:80%;
 }
 
 .image-container img{
@@ -95,15 +99,6 @@ h1{
     margin:10px;
     border:solid 2px var(--red);
 }
-
-/* .cv-button:hover{
-    padding:5px 15px;
-    color:var(--red);   
-    margin:10px;
-    border:solid 2px var(--white);
-} */
-
-
 
 
 .bio-text{
@@ -135,6 +130,27 @@ h1{
     align-items: center;
     margin:20px 0px;
 }
+
+.links-headline{
+    text-align: center;
+}
+
+.links{
+    display:flex;
+    justify-content: center;
+    margin-bottom:50px;
+}
+
+.links >*{
+    text-align: center;
+}
+
+#main-git, .fa-linkedin-in{
+    margin:20px;
+    font-size:2rem;
+}
+
+
 
 .first-row, .sec-row{
     display:flex;
@@ -205,35 +221,49 @@ td{
     padding: 15px 0px;
 }
 
+.portfolio-item{
+    margin:20px;
+    max-width: 400px;
+}
+
+
 .portfolio-headline{
     margin-bottom: 20px;
+    text-align: center;
 }
 
-
-.portefolio-number{
-    font-size: 1.5rem;
-    color:var(--red);
-}
-
-.portefolio{
+.portfolio-headings{
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-.portefolio-item{
+
+.portfolio-number{
+    font-size: 1.5rem;
+    color:var(--red);
+}
+
+.portfolio{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-img-container{
     margin:20px 0px;
-    /* width:90%; */
-    filter: drop-shadow(0 5px 0.3rem var(--red));
-    
+    width:90%;
+    /* filter: drop-shadow(0 5px 0.3rem var(--red)); */
 }
 
-.portefolio-item img{
+.portfolio-img-container img{
     width:100%;
-    object-fit: contain;
+    height:200px;
+    
+    object-fit: cover;
 }
 
-.portefolio-card{
+.portfolio-card{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -241,20 +271,17 @@ td{
     background-color: #11243e;
     color:white;
     text-align: center;
-    /* height:150px; */
+
 }
 
-.portefolio-card >*{
+.portfolio-card >*{
     margin:10px;
 }
 
-.portefolio-card p{
+.portfolio-card p{
     color:var(--white);
 }
 
-.portefolio-item:nth-child(2) > div:nth-child(2){
-    background-color:var(--background);
-}
 
 .built-with{
     display:flex;
@@ -274,7 +301,7 @@ td{
     
 }
 
-.portefolio-number{
+.portfolio-number{
     font-family:Mandalore;
     font-size: 2rem;
 }
@@ -332,9 +359,9 @@ td{
     margin-left: 5px;
 }
 
-.fa-linkedin-in{
+/* .fa-linkedin-in{
     font-size: 1rem;
-}
+} */
 
 
 
@@ -348,23 +375,136 @@ td{
         justify-content: center;
     }
 
-    .cover-container img{
-        width:100%;
-        height:100%;
+    .image-container{
+        max-width:500px;
+    }
+
+    .mobile-img{
+        display:none;
+    }
+
+    .desktop-img{
+        display:block;
+    }
+
+    .text-container h1{
+        font-size: 2rem;
     }
     
-    .text-container{
-        display:flex;
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center;
+    .text-container h2{
+        font-size: 2.5rem;
     }
-    
+
     .cv-button{
-        padding:20px 60px;
-        background-color:var(--red);
+        padding:10px 25px;
+    }
+
+    .mid-section{
+        display:grid;
+        max-width:750px;
+        margin:25px auto;
+        row-gap: 10px;
+        grid-template-areas: 
+        "bio-container skills-container"
+        "links-container links-container";
+    }
+
+    .bio-container{
+        grid-area: bio-container;
+    }
+
+    .skills-container{
+        grid-area: skills-container;
+        align-self: end;
+    }
+
+    .skill-icons{
+        margin:0px;
+    }
+
+    .bio-headline{
+        margin:0px;
+    }
+
+    .links-container{
+        grid-area: links-container;
 
     }
+
+    .mid-section h2{
+        margin:20px;
+    }
+
+    .fa-code{
+        display:none;
+    }
+
+    .portfolio{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .portfolio-item{
+        max-width: 300px;
+    }
+
+    .portfolio-card{
+        height:300px;
+    }
+
+    .portfolio-item:hover{
+        filter: drop-shadow(0px 0px 0.4rem var(--red))
+    }
+
+    .last-section{
+        
+        max-width:1000px;
+        margin:50px auto;
+        display:grid;
+        grid-template-areas: 
+        "links-container bio-info"
+        "education education"
+        "other-skills other-skills"
+        "lets-connect lets-connect";
+
+    }
+
+    .links{
+        margin:0px;
+    }
+
+    .links-container{
+        grid-area:links-container;
+        
+
+    }
+    .bio-info{
+        grid-area:bio-info;
+    }
+    .education {
+        grid-area: education;
+    }
+    .other-skills{
+        grid-area:other-skills;
+    }
+    .lets-connect{
+        grid-area:lets-connect;
+    }
+
+
+
+
+
+
+
+
+
+  
+
+
     
 }
 
