@@ -499,6 +499,17 @@ td{
 
     }
 
+    .fa-github, .fa-linkedin-in{
+        transition: transform .2s;
+    }
+
+    .fa-github:hover, .fa-linkedin-in:hover{
+        color:var(--white);
+        transform: scale(1.2);
+        
+
+    }
+
 
 
 
