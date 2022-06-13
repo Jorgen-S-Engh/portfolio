@@ -35,3 +35,26 @@ function calculateAge(bday) {
 }
 const myAge = calculateAge(new Date(1988, 7, 13));
 age.innerHTML = myAge;
+
+// MODAL
+
+const skillContainer = document.querySelector(".skill-icons");
+const modalContainer = document.querySelector(".modal-container");
+const expandMessage = document.querySelector(".expand-message");
+
+skillContainer.addEventListener("mouseover", () => {
+  expandMessage.style.display = "block";
+});
+skillContainer.addEventListener("mouseout", () => {
+  expandMessage.style.display = "none";
+});
+
+skillContainer.addEventListener("click", () => {
+  modalContainer.style.display = "block";
+});
+
+window.onclick = (e) => {
+  if (e.target === modalContainer) {
+    modalContainer.style.display = "none";
+  }
+};

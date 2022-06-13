@@ -355,6 +355,17 @@ td{
     margin-left: 5px;
 }
 
+.modal{
+    display:none;
+}
+
+.expand-message{
+    visibility: hidden;
+    position:absolute;
+    
+
+}
+
 
 
 
@@ -413,7 +424,11 @@ td{
 
     .skill-icons{
         margin:0px;
+        cursor: pointer;
+        position:relative;
+        
     }
+
 
     .bio-headline{
         margin:0px;
@@ -501,6 +516,52 @@ td{
         
 
     }
+
+    .modal-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        width: 100%;
+        display: none;
+        z-index: 2;
+    }
+
+    .modal h2{
+        text-align: center;
+    }
+
+    .modal{
+        position: absolute;
+        display:block;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        transform: translate(-50%, -50%); 
+        background-color: var(--dark-navy);
+    }
+
+    .expand-message{
+        color:var(--white);
+        position:absolute;
+        top:50%;
+        padding:10px;
+        background-color: var(--red);
+        display:none;
+        visibility: visible;
+        /* z-index:10; */
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
