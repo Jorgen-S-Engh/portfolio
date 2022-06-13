@@ -39,8 +39,6 @@ body{
 }
 
 nav{
-    /* display:flex;
-    justify-content: flex-end; */
     height:30px;
 }
 
@@ -72,7 +70,6 @@ h1{
 }
 
 .image-container{
-    /* height:180px; med denne høyden så går bilde under teksten, dette er ønsket effekt */
     width:80%;
 }
 
@@ -95,7 +92,6 @@ h1{
 
 .cv-button{
     padding:5px 15px;
-    /* background-color: var(--red); */
     margin:10px;
     border:solid 2px var(--red);
 }
@@ -359,9 +355,6 @@ td{
     margin-left: 5px;
 }
 
-/* .fa-linkedin-in{
-    font-size: 1rem;
-} */
 
 
 
@@ -460,7 +453,6 @@ td{
     }
 
     .last-section{
-        
         max-width:1000px;
         margin:50px auto;
         display:grid;
@@ -510,13 +502,22 @@ td{
 
     }
 
+    .contact-info{
+        transition:1.4s;
 
+    }
 
+    /* .contact-info:hover{
 
+        transition:1.4s;
 
+    } */
 
+    /* .contact-me-email:hover, .fa-envelope:hover{
+        color:var(--white);
+    } */
 
-
+    
 
   
 

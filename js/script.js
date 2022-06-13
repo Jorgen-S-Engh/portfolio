@@ -5,6 +5,8 @@ const downloadButton = document.querySelector(".cv-button");
 
 button.addEventListener("click", () => {
   contact.style.display = "flex";
+  contact.syle.visibility = "visible";
+  contact.style.transition = "all 2s";
   button.style.display = "none";
 });
 
