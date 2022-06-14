@@ -62,7 +62,8 @@ h1{
     flex-direction: column;
     align-items: center;
     background-color: rgba(85, 139, 196, 0.1);
-    
+    max-width:2000px;
+    margin: 0 auto;
 }
 
 .desktop-img{
@@ -362,19 +363,12 @@ td{
 .expand-message{
     visibility: hidden;
     position:absolute;
-    
-
 }
-
-
-
 
 @media only screen and (min-width: 750px){
 
     
     .cover-container{
-        background-color: rgba(85, 139, 196, 0.1);
-        display:flex;
         flex-direction: row-reverse;
         justify-content: center;
     }
@@ -426,7 +420,7 @@ td{
         margin:0px;
         cursor: pointer;
         position:relative;
-        
+
     }
 
 
@@ -443,12 +437,7 @@ td{
         margin:20px;
     }
 
-    .fa-code{
-        display:none;
-    }
-
     .portfolio{
-        display:flex;
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
@@ -550,7 +539,6 @@ td{
         background-color: var(--red);
         display:none;
         visibility: visible;
-        /* z-index:10; */
     }
 
 
