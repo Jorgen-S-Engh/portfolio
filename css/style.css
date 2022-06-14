@@ -529,6 +529,7 @@ td{
         width: 50%;
         transform: translate(-50%, -50%); 
         background-color: var(--dark-navy);
+        max-width:1000px;
     }
 
     .expand-message{
