@@ -4,8 +4,6 @@ const skillIcon = document.querySelector(".skill-icons");
 const downloadIcon = document.querySelector(".fa-circle-arrow-down");
 const downloadButton = document.querySelector(".cv-button");
 const age = document.querySelector(".my-age");
-// const showMore = document.querySelector(".show-more");
-// const thirdRow = document.querySelector(".third-row");
 
 button.addEventListener("click", () => {
   contact.style.display = "flex";
@@ -22,11 +20,6 @@ downloadButton.addEventListener("mouseout", () => {
   downloadButton.style.color = "#f5f5f5";
 });
 
-// showMore.addEventListener("click", () => {
-//   thirdRow.style.display = "flex";
-//   showMore.innerHTML = "Show less";
-// });
-
 // AGE FUNCTION
 function calculateAge(bday) {
   const dateDiff = Date.now() - bday.getTime();
@@ -37,20 +30,25 @@ const myAge = calculateAge(new Date(1988, 7, 13));
 age.innerHTML = myAge;
 
 // MODAL
-
 const skillContainer = document.querySelector(".skill-icons");
 const modalContainer = document.querySelector(".modal-container");
 const expandMessage = document.querySelector(".expand-message");
 
 skillContainer.addEventListener("mouseover", () => {
-  expandMessage.style.display = "block";
+  if (window.screen.width >= 750) {
+    expandMessage.style.display = "block";
+  }
 });
 skillContainer.addEventListener("mouseout", () => {
-  expandMessage.style.display = "none";
+  if (window.screen.width >= 750) {
+    expandMessage.style.display = "none";
+  }
 });
 
 skillContainer.addEventListener("click", () => {
-  modalContainer.style.display = "block";
+  if (window.screen.width >= 750) {
+    modalContainer.style.display = "block";
+  }
 });
 
 window.onclick = (e) => {
